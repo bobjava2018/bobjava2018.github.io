@@ -33,7 +33,7 @@ new_post_name: :title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
-filename_case: 0
+filename_case:  0
 render_drafts: false
 post_asset_folder: true
 relative_link: false
@@ -46,16 +46,16 @@ highlight:
 prism_plugin:
   mode: 'preprocess'    # realtime/preprocess
   theme: 'tomorrow'
-  line_number: false    # default false
+  line_number: true    # default false
   custom_css: 
 search:
   path: search.xml
   field: post
 permalink_pinyin:
-  enable: true
+  enable: false
   separator: '-' # default: '-'
 wordCount:
-  enable: false # 将这个值设置为 true 即可.
+  enable: true # 将这个值设置为 true 即可.
   postWordCount: true
   min2read: true
   totalCount: true
@@ -71,9 +71,9 @@ feed:
 # 是否在首页显示音乐.
 music:
   enable: true
-  showTitle: false
+  showTitle: true
   title: 听听音乐
-  fixed: false # 是否开启吸底模式
+  fixed: true # 是否开启吸底模式
   autoplay: false # 是否自动播放
   theme: '#42b983'
   loop: 'all' # 音频循环播放, 可选值: 'all', 'one', 'none'
@@ -105,7 +105,7 @@ time_format: HH:mm:ss
 
 # Pagination
 ## Set per_page to 0 to disable pagination
-per_page: 18
+per_page: 12
 pagination_dir: page
 
 # Extensions
