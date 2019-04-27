@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>Docker安装 | bob blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Docker一、简介  Docker是一个开源的应用容器引擎   将软件编译成一个镜像；然后再镜像里面各种软件做好配置，将镜像发布出去，在服务器上就可以直接使用这个镜像来运行各种软件。运行中的这个镜像叫做容器，容器启动速度快，类似ghost操作系统，安装好了就什么都有了。 二、 Docker的核心概念docker主机（host）：安装了Docker程序的机器（Docker是直接安装在操作系统上的）">
+<meta name="keywords" content="java">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Docker安装">
+<meta property="og:url" content="http://yoursite.com/2019/04/27/Docker安装/index.html">
+<meta property="og:site_name" content="bob blog">
+<meta property="og:description" content="Docker一、简介  Docker是一个开源的应用容器引擎   将软件编译成一个镜像；然后再镜像里面各种软件做好配置，将镜像发布出去，在服务器上就可以直接使用这个镜像来运行各种软件。运行中的这个镜像叫做容器，容器启动速度快，类似ghost操作系统，安装好了就什么都有了。 二、 Docker的核心概念docker主机（host）：安装了Docker程序的机器（Docker是直接安装在操作系统上的）">
+<meta property="og:locale" content="java">
+<meta property="og:image" content="http://yoursite.com/2019/04/27/Docker安装/1555837998110.png">
+<meta property="og:image" content="http://yoursite.com/2019/04/27/Docker安装/1555838069439.png">
+<meta property="og:image" content="http://yoursite.com/2019/04/27/Docker安装/1555841748124.png">
+<meta property="og:updated_time" content="2019-04-27T07:56:45.839Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Docker安装">
+<meta name="twitter:description" content="Docker一、简介  Docker是一个开源的应用容器引擎   将软件编译成一个镜像；然后再镜像里面各种软件做好配置，将镜像发布出去，在服务器上就可以直接使用这个镜像来运行各种软件。运行中的这个镜像叫做容器，容器启动速度快，类似ghost操作系统，安装好了就什么都有了。 二、 Docker的核心概念docker主机（host）：安装了Docker程序的机器（Docker是直接安装在操作系统上的）">
+<meta name="twitter:image" content="http://yoursite.com/2019/04/27/Docker安装/1555837998110.png">
+  
+    <link rel="alternate" href="/atom.xml" title="bob blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">bob blog</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">study everyday</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Docker安装" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/04/27/Docker安装/" class="article-date">
+  <time datetime="2019-04-27T07:51:34.000Z" itemprop="datePublished">2019-04-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Docker安装
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Docker"><a href="#Docker" class="headerlink" title="Docker"></a>Docker</h1><h2 id="一、简介"><a href="#一、简介" class="headerlink" title="一、简介"></a>一、简介</h2><p>  Docker是一个开源的应用容器引擎</p>
+<p>  将软件编译成一个镜像；然后再镜像里面各种软件做好配置，将镜像发布出去，在服务器上就可以直接使用这个镜像来运行各种软件。运行中的这个镜像叫做容器，容器启动速度快，类似ghost操作系统，安装好了就什么都有了。</p>
+<h2 id="二、-Docker的核心概念"><a href="#二、-Docker的核心概念" class="headerlink" title="二、 Docker的核心概念"></a>二、 Docker的核心概念</h2><p>docker主机（host）：安装了Docker程序的机器（Docker是直接安装在操作系统上的）</p>
+<p>docker客户端（Client）：操作docker的主机</p>
+<p>docker仓库（Registry):用来保存打包好的软件镜像</p>
+<p>docker镜像（image）:打包好的镜像，一般都从docker仓库中下载</p>
+<p>docker容器（Container）:镜像启动 后的实力（启动一个mysql镜像5次，就会有5个容器）</p>
+<p>docker镜像的使用步骤：</p>
+<ol>
+<li>安装Docker</li>
+<li>去Docker仓库找到这个软件对应的镜像</li>
+<li>使用Docker运行这个镜像，镜像就会生成一个容器</li>
+<li>对容器的启动停止，就是对软件的启动和停止</li>
+</ol>
+<h2 id="三、Doker的安装"><a href="#三、Doker的安装" class="headerlink" title="三、Doker的安装"></a>三、Doker的安装</h2><ol>
+<li><p>安装linux系统</p>
+</li>
+<li><p>在linux上安装docker</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">1、查看centos版本,内核3.1以上YUM </span><br><span class="line"># uname -r</span><br><span class="line">3.10.0-693.el7.x86_64</span><br><span class="line">要求：大于3.10</span><br><span class="line">如果小于的话升级*（选做）</span><br><span class="line"># yum update</span><br><span class="line">2、安装docker</span><br><span class="line"># yum install docker</span><br><span class="line">3、启动docker</span><br><span class="line"># systemctl start docker</span><br><span class="line"># docker -v</span><br><span class="line">4、开机启动docker</span><br><span class="line"># systemctl enable docker</span><br><span class="line">5、停止docker</span><br><span class="line"># systemctl stop docker</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="四、Docker-的常用操作"><a href="#四、Docker-的常用操作" class="headerlink" title="四、Docker 的常用操作"></a>四、Docker 的常用操作</h2><h3 id="1、镜像操作"><a href="#1、镜像操作" class="headerlink" title="1、镜像操作"></a>1、镜像操作</h3><ol>
+<li><p>搜索</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker search mysql</span><br></pre></td></tr></table></figure>
+<p>默认会去docker hub网站查找</p>
+<p><img src="/2019/04/27/Docker安装/1555837998110.png" alt="1555837998110"></p>
+<p>   我们也可以手动去docker hub查找 <a href="https://hub.docker.com/" target="_blank" rel="noopener">https://hub.docker.com/</a></p>
+<p>  <img src="/2019/04/27/Docker安装/1555838069439.png" alt="1555838069439"></p>
+</li>
+</ol>
+<p>2、拉取镜像ags标签进入 里面， 里面的 rc  10.4是标签，一会儿下载要用</p>
+  <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">默认最新版本  如果后面没有冒号标签 默认安装最新版本 latest</span><br><span class="line"><span class="meta">#</span><span class="bash"> docekr pull mysql</span></span><br><span class="line">安装指定版本  </span><br><span class="line"><span class="meta">#</span><span class="bash"> docker pull mariadb:10.4</span></span><br><span class="line"></span><br><span class="line">//版本太低的话需要升级</span><br><span class="line"><span class="meta">#</span><span class="bash"> rpm -qa | grep docker – – 列出包含docker字段的软件的信息</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> yum remove docker-1.13.1-53.git774336d.el7.centos.x86_64 </span></span><br><span class="line"><span class="meta">#</span><span class="bash"> yum remove docker-client-1.13.1-53.git774336d.el7.centos.x86_64 </span></span><br><span class="line"><span class="meta">#</span><span class="bash"> yum remove docker-common-1.13.1-53.git774336d.el7.centos.x86_64</span></span><br><span class="line">使用curl升级到最新版 </span><br><span class="line"><span class="meta">#</span><span class="bash"> curl -fsSL https://get.docker.com/ | sh</span></span><br><span class="line"></span><br><span class="line">天下容器, 唯快不破  (配置此镜像加速的前置条件，是将docker 升级到1.8以上)</span><br><span class="line">Docker Hub 提供众多镜像，你可以从中自由下载数十万计的免费应用镜像， 这些镜像作为 docker 生态圈的基石，是我们使用和学习 docker 不可或缺的资源。为了解决国内用户使用 Docker Hub 时遇到的稳定性及速度问题 DaoCloud 推出永久免费的新一代镜像站服务</span><br><span class="line">  &lt;https://www.daocloud.io/mirror#accelerator-doc/&gt;</span><br><span class="line">curl -sSL https://get.daocloud.io/daotools/set_mirror.sh | sh -s http://f1361db2.m.daocloud.io</span><br></pre></td></tr></table></figure>
+<p>3、查看下载的所有的镜像、删除</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># docker images  //查看镜像</span><br><span class="line"># docker  rmi imageid  //删除的时候使用镜像ID</span><br></pre></td></tr></table></figure>
+<p><img src="/2019/04/27/Docker安装/1555841748124.png" alt="1555841748124"></p>
+<h3 id="2、容器操作"><a href="#2、容器操作" class="headerlink" title="2、容器操作"></a>2、容器操作</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">1、搜索镜像</span><br><span class="line"><span class="meta">#</span><span class="bash"> docker search mariadb</span></span><br><span class="line">2、启动容器  此处要注意端口映射  即要通过主机的端口去</span><br><span class="line">虚拟机:3307</span><br><span class="line">容器的:3308</span><br><span class="line">-d:后台运行</span><br><span class="line">-p:主机端口(所启动的容器在主机中所占的端口):容器内端口（容器内的镜像 在容器内的的端口，此端口一般是默认的比如mysql 3036   tomcat8080 ）</span><br><span class="line"></span><br><span class="line">连接数据库：192.168.0.103:3037</span><br><span class="line"><span class="meta">#</span><span class="bash">docker run --name mariadb01 -e MYSQL_ROOT_PASSWORD=1030406963 -d -p 13308:3306 mariadb:10.4</span></span><br><span class="line"><span class="meta">#</span><span class="bash">docker run --name mariadb02 -e MYSQL_ROOT_PASSWORD=1030406963 -d -p 13309:3306 mariadb:10.4</span></span><br><span class="line">此处用了两次命令分别在 主机的13309和13308端口启动两个数据库，我们可以在外面通过这两个端口来访问mariadb</span><br><span class="line"></span><br><span class="line">//查看所有容器</span><br><span class="line"><span class="meta">#</span><span class="bash"> docker ps -a</span></span><br><span class="line">//停止容器</span><br><span class="line"><span class="meta">#</span><span class="bash"> docker stop id</span></span><br><span class="line">//删除容器</span><br><span class="line"><span class="meta">#</span><span class="bash"> docker rm id</span></span><br><span class="line"></span><br><span class="line">如果远程连接不上数据库，可进行以下操作（一般情况下是配置好的）</span><br><span class="line">//进入容器内 可以再次连接数据库</span><br><span class="line"><span class="meta">#</span><span class="bash"> docker <span class="built_in">exec</span> -it id  /bin/bash</span></span><br><span class="line"><span class="meta">#</span><span class="bash">mysql -uroot -p</span></span><br><span class="line"><span class="meta">#</span><span class="bash">输入密码</span></span><br><span class="line"><span class="meta">#</span><span class="bash">use mysql</span></span><br><span class="line"><span class="meta">#</span><span class="bash">GRANT ALL PRIVILEGES ON *.* TO <span class="string">'root'</span> @<span class="string">'%'</span> IDENTIFIED BY <span class="string">'1030406963'</span> WITH GRANT OPTION;</span></span><br><span class="line"><span class="meta">#</span><span class="bash">flush privileges;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">3.安装tomcat</span><br><span class="line"><span class="meta">#</span><span class="bash"> docker pull tomcat:9.0.19-jre8</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> docker run -it --rm -d -p 8888:8080 tomcat:9.0.19-jre8</span></span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/04/27/Docker安装/" data-id="cjuz7tgrc0001wol145ku77a7" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2019/04/25/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/04/27/Docker安装/">Docker安装</a>
+          </li>
+        
+          <li>
+            <a href="/2019/04/25/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 Bob<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
