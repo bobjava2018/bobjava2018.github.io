@@ -29,7 +29,8 @@
     </style>
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -420,7 +421,7 @@
 <li><p>安装linux系统</p>
 </li>
 <li><p>在linux上安装docker</p>
-<pre class=" language-she"><code class="language-she">1、查看centos版本,内核3.1以上YUM 
+<pre class="line-numbers language-she"><code class="language-she">1、查看centos版本,内核3.1以上YUM 
 # uname -r
 3.10.0-693.el7.x86_64
 要求：大于3.10
@@ -435,13 +436,13 @@
 # systemctl enable docker
 5、停止docker
 # systemctl stop docker
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 </li>
 </ol>
 <h2 id="四、Docker-的常用操作"><a href="#四、Docker-的常用操作" class="headerlink" title="四、Docker 的常用操作"></a>四、Docker 的常用操作</h2><h3 id="1、镜像操作"><a href="#1、镜像操作" class="headerlink" title="1、镜像操作"></a>1、镜像操作</h3><ol>
 <li><p>搜索</p>
-<pre class=" language-shell"><code class="language-shell">docker search mysql
-</code></pre>
+<pre class="line-numbers language-shell"><code class="language-shell">docker search mysql
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>默认会去docker hub网站查找</p>
 <p><img src="/2019/04/27/Docker安装/1555837998110.png" alt="1555837998110"></p>
 <p>   我们也可以手动去docker hub查找 <a href="https://hub.docker.com/" target="_blank" rel="noopener">https://hub.docker.com/</a></p>
@@ -449,7 +450,7 @@
 </li>
 </ol>
 <p>2、拉取镜像ags标签进入 里面， 里面的 rc  10.4是标签，一会儿下载要用</p>
-<pre class=" language-shell"><code class="language-shell">默认最新版本  如果后面没有冒号标签 默认安装最新版本 latest
+<pre class="line-numbers language-shell"><code class="language-shell">默认最新版本  如果后面没有冒号标签 默认安装最新版本 latest
 # docekr pull mysql
 安装指定版本  
 # docker pull mariadb:10.4
@@ -467,13 +468,13 @@ Docker Hub 提供众多镜像，你可以从中自由下载数十万计的免费
   <https: www.daocloud.io mirror#accelerator-doc>
 curl -sSL https://get.daocloud.io/daotools/set_mirror.sh | sh -s http://f1361db2.m.daocloud.io
 
-</https:></code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></https:></code></pre>
 <p>3、查看下载的所有的镜像、删除</p>
-<pre class=" language-SHE"><code class="language-SHE"># docker images  //查看镜像
+<pre class="line-numbers language-SHE"><code class="language-SHE"># docker images  //查看镜像
 # docker  rmi imageid  //删除的时候使用镜像ID
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p><img src="/2019/04/27/Docker安装/1555841748124.png" alt="1555841748124"></p>
-<h3 id="2、容器操作"><a href="#2、容器操作" class="headerlink" title="2、容器操作"></a>2、容器操作</h3><pre class=" language-shell"><code class="language-shell">1、搜索镜像
+<h3 id="2、容器操作"><a href="#2、容器操作" class="headerlink" title="2、容器操作"></a>2、容器操作</h3><pre class="line-numbers language-shell"><code class="language-shell">1、搜索镜像
 # docker search mariadb
 2、启动容器  此处要注意端口映射  即要通过主机的端口去
 虚拟机:3307
@@ -506,7 +507,7 @@ curl -sSL https://get.daocloud.io/daotools/set_mirror.sh | sh -s http://f1361db2
 3.安装tomcat
 # docker pull tomcat:9.0.19-jre8
 # docker run -it --rm -d -p 8888:8080 tomcat:9.0.19-jre8
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr>
