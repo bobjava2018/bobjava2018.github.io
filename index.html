@@ -5,7 +5,7 @@
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
     <meta name="keywords" content="code">
-    <meta name="description" content="bob blog">
+    <meta name="description" content="bob">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>bob blog</title>
+    <title>bob</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -42,7 +42,7 @@
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">bob blog</span>
+                    <span class="logo-span">bob</span>
                 </a>
             </div>
             
@@ -117,10 +117,10 @@
         
         <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">bob blog</div>
+        <div class="logo-name">bob</div>
         <div class="logo-desc">
             
-            编程爱好者
+            少年
             
         </div>
     </div>
@@ -308,13 +308,13 @@
         <div class="brand">
             <div class="title center-align">
                 
-                    study everyday
+                    心有猛虎,细嗅蔷薇
                 
             </div>
 
             <div class="description center-align">
                 
-                    编程爱好者
+                    少年
                 
             </div>
         </div>
@@ -427,6 +427,41 @@ $(function () {
                     
 
                     
+                        
+
+<link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<div class="music-player">
+    
+    <div class="title center-align">
+        <i class="fa fa-music"></i>&nbsp;&nbsp;听听音乐
+    </div>
+    
+    <div class="row">
+        <div class="col l8 offset-l2 m10 offset-m1 s12">
+            <div id="aplayer" class="music"></div>
+        </div>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script>
+$(function () {
+    new APlayer({
+        container: document.getElementById('aplayer'),
+        fixed: 'false' === 'true',
+        autoplay: 'false' === 'true',
+        theme: '#42b983',
+        loop: 'all',
+        order: 'list',
+        preload: 'auto',
+        volume: Number('0.7'),
+        listFolded: 'false' === 'true',
+        listMaxHeight: '',
+        audio: JSON.parse('[{"name":"愿你","artist":"昼夜","url":"http://sd.sycdn.kuwo.cn/resource/n1/26/75/1844427706.mp3","cover":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1556371462717&di=b64a06482ec5bead8ab8dbd25b62bf47&imgtype=0&src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20161216%2F7512b61c9bc54fcab398d35c5f8775a8_th.jpg"}]')
+    });
+});
+</script>
+                    
 
                     
 
@@ -529,10 +564,13 @@ $(function () {
 <footer class="page-footer bg-color">
     <div class="container row center-align">
         <div class="col s12 m8 l8 copy-right">
-            本站由&copy;<a href="https://blinkfox.github.io/" target="_blank">Blinkfox</a>基于
+            本站由&copy;<a href="https://github.com/bobjava2018" target="_blank">Bob</a>基于
             <a href="https://hexo.io/" target="_blank">Hexo</a> 的
             <a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">hexo-theme-matery</a>主题搭建.
 
+            
+                &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
+                <span class="white-color">1.1k</span>
             
 
             
