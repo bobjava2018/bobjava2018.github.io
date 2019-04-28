@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: bob blog
-subtitle: study everyday
-description: 编程爱好者
+title: bob
+subtitle: 心有猛虎,细嗅蔷薇
+description: 少年
 keywords: code
 author: Bob
 language: zh-CN
@@ -54,11 +54,6 @@ search:
 permalink_pinyin:
   enable: false
   separator: '-' # default: '-'
-wordCount:
-  enable: true # 将这个值设置为 true 即可.
-  postWordCount: true
-  min2read: true
-  totalCount: true
 feed:
   type: atom
   path: atom.xml
@@ -68,20 +63,6 @@ feed:
   content_limit: 140
   content_limit_delim: ' '
   order_by: -date
-# 是否在首页显示音乐.
-music:
-  enable: true
-  showTitle: true
-  title: 听听音乐
-  fixed: true # 是否开启吸底模式
-  autoplay: false # 是否自动播放
-  theme: '#42b983'
-  loop: 'all' # 音频循环播放, 可选值: 'all', 'one', 'none'
-  order: 'list' # 音频循环顺序, 可选值: 'list', 'random'
-  preload: 'auto' # 预加载，可选值: 'none', 'metadata', 'auto'
-  volume: 0.7 # 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效
-  listFolded: false # 列表默认折叠
-  listMaxHeight: # 列表最大高度
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
