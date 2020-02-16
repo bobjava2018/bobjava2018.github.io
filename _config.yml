@@ -4,8 +4,8 @@
 
 # Site
 title: bob
-subtitle: 心有猛虎,细嗅蔷薇
-description: 少年
+subtitle: 心有猛虎 细嗅蔷薇
+description: 
 keywords: code
 author: Bob
 language: zh-CN
@@ -92,7 +92,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: hexo-theme-matery
+theme: landscape
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
